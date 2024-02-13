@@ -34,14 +34,14 @@ console.log(arr1 === arr4);
 
 console.log('\nAfter `arr1[0] = "new_value";`:\n');
 
-console.log(arr1);  // changed!
-console.log(arr2);  // changed!
+console.log(arr1);  // changes, as expected.
+console.log(arr2);  // changes!!
 console.log(arr3);  // unaffected
 console.log(arr4);  // unaffected
 
 console.log('\n After `arr1 = ["blah"];`:\n');
 
-console.log(arr1);
-console.log(arr2);
-console.log(arr3);
-console.log(arr4);
+console.log(arr1);  // changes, as expected
+console.log(arr2);  // unaffected
+console.log(arr3);  // unaffected
+console.log(arr4);  // unaffected
